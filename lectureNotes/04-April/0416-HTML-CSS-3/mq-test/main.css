@@ -44,14 +44,51 @@ font will be used.
     display: inline-block;
     margin-left: 16px;
     color: rgba(0,0,0,0.6);
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 .mobile_menu {
     width: 32px;
 }
 
+.mobile_menu_container {
+    width: 75%;
+    height: calc(100vh - 55px);
+    background: #999;
+    position: fixed;
+    right: -100;
+    top: 75px;
+    transition: all 0.5s ease;
+    /* animation: slide_out 2s infinite; */
+}
+
+.menu_open .mobile_menu_container {
+    right: 0;
+}
+/* @keyframes slide_out {
+    0%   { 
+        right: -100%;
+    }
+    73% {
+        right: 30px;
+    }
+    85% {
+        right: -30px;
+    }
+
+    100% { 
+        right: 0; 
+    }
+  } */
+
+  /* 
+This keyframes timeline is where we set up the tweens.
+*/
+
 @media(min-width: 750px) {
+    html {
+        font-size: 18px;
+    }
     .mobile_logo {
         display: none;
     }
@@ -63,6 +100,14 @@ font will be used.
 
 
 @media(min-width: 900px) {
+    html {
+        font-size: 20px;
+    }
+
+    .main_header {
+        justify-content: flex-start;
+    }
+
     .mobile_menu {
         display: none;
     }

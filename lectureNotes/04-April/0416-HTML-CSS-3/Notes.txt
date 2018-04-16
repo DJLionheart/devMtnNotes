@@ -3,3 +3,42 @@ Don't use max-width and min-width on the same page.
 Choose one or the other.
 
 Start Mobile-first, that's the industry standard.
+
+
+Key Frames:
+CSS
+You have animation from beginning to start, controlling the way it moves.
+Works with any framework or library right out the gate.
+
+
+TweenMax.to()
+
+
+
+GSAP:
+(Green Sock Animation Platform)
+JavaScript.
+You can be specific on the tweens
+You can add values as the timeline progresses
+
+
+SVG:
+
+
+With trying to slide a menu out...
+It would be hard to manage in keyframes
+
+Sass can help (?)
+
+Just like in JavaScript, you can give classes and such variable name and reference
+them throughout your project.
+
+
+When targeting items for animation in JS, use industry
+
+
+
+
+Animation gives you access to the keyframes.
+
+Transition only lets you control the movement, nothing in-between
