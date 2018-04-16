@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="52px" height="52px" viewBox="0 0 52 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Play</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.8%" y="-3.4%" width="111.6%" height="108.6%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M11,22 C4.92486775,22 0,17.0751322 0,11 C0,4.92486775 4.92486775,0 11,0 C17.0751322,0 22,4.92486775 22,11 C22,17.0751322 17.0751322,22 11,22 Z M11,20.68 C16.3461164,20.68 20.68,16.3461164 20.68,11 C20.68,5.65388362 16.3461164,1.32 11,1.32 C5.65388362,1.32 1.32,5.65388362 1.32,11 C1.32,16.3461164 5.65388362,20.68 11,20.68 Z" id="path-2"></path>
+        <polygon id="path-4" points="3.08 0 6.16 6.16 0 6.16"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3-—-Homepage-C" transform="translate(-983.000000, -409.000000)">
+            <g id="Card" filter="url(#filter-1)" transform="translate(968.000000, 139.000000)">
+                <g id="Content" transform="translate(30.000000, 280.000000)">
+                    <g id="Play">
+                        <g id="Part">
+                            <mask id="mask-3" fill="white">
+                                <use xlink:href="#path-2"></use>
+                            </mask>
+                            <use id="Combined-Shape" fill="#1D1F24" xlink:href="#path-2"></use>
+                            <g id="Element-/-Brand-Color" mask="url(#mask-3)" fill="#FF565C">
+                                <g transform="translate(-1.760000, -2.640000)" id="Background">
+                                    <rect x="0" y="0" width="25.889361" height="26.9999993"></rect>
+                                </g>
+                            </g>
+                        </g>
+                        <g id="Part" transform="translate(8.800000, 7.920000)">
+                            <mask id="mask-5" fill="white">
+                                <use xlink:href="#path-4"></use>
+                            </mask>
+                            <use id="Triangle" fill="#1D1F24" transform="translate(3.080000, 3.080000) rotate(90.000000) translate(-3.080000, -3.080000) " xlink:href="#path-4"></use>
+                            <g id="Element-/-Brand-Color" mask="url(#mask-5)" fill="#FF565C">
+                                <g transform="translate(-2.640000, -1.760000)" id="Background">
+                                    <rect x="0" y="0" width="10.9531912" height="9.99999974"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

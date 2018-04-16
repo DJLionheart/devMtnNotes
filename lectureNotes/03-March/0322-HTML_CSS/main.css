@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
+
+
+#canyon_image {
+    width: 300px;
+}
+
+.image {
+    width: 300px;
+    height: auto;
+    margin: 10px auto;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+}
+
+.neighbor_text {
+    display: inline-block;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: rgba(235, 15, 15, 0.39);
+}
+
+.box_one {
+    height: 5vh;
+    width: 20vw;
+    background: blueviolet;
+    display: inline-block;
+}
+
+.box_two {
+    height: 40px;
+    width: 100px;
+    background: url('https://images.unsplash.com/photo-1467071114456-dddb1d7b4842?ixlib=rb-0.3.5&s=9b8c5455bb164ac847f04cd0d03c4202&auto=format&fit=crop&w=1650&q=80') no-repeat center;
+    background-size: cover;
+    float: right;
+}

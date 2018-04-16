@@ -1,0 +1,6 @@
+Anything used for backend (endpoints, etc) goes in the server folder.
+
+Everything front-end will go in the root/src folder.
+
+
+Use the "proxy" property in your package.json

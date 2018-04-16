@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="35px" viewBox="0 0 38 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-5.8%" y="-5.6%" width="111.6%" height="113.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.149999991">
+        <g id="3-—-Homepage-C" transform="translate(-525.000000, -1426.000000)" fill="#1D1F24">
+            <g id="Card" filter="url(#filter-1)" transform="translate(504.000000, 1114.000000)">
+                <g id="Footer" transform="translate(0.000000, 289.000000)">
+                    <g id="share" transform="translate(31.000000, 20.000000)">
+                        <path d="M7,12 L7,8 L0,15 L7,22 L7,17.9 C12,17.9 15.5,19.5 18,23 C17,18 14,13 7,12 L7,12 Z" id="Icon" transform="translate(9.000000, 15.500000) scale(-1, 1) translate(-9.000000, -15.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

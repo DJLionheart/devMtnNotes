@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-720.000000, -434.000000)">
+        <g id="atica" transform="translate(525.000000, 235.000000)" fill="#3F4751">
+            <g id="btn" transform="translate(157.000000, 196.000000)">
+                <g id="icons/arrow" transform="translate(39.200000, 8.000000) scale(-1, 1) translate(-39.200000, -8.000000) translate(34.400000, 3.200000)">
+                    <polygon id="Page-1" points="4.63415385 0.307723077 0 4.94187692 4.63415385 9.57572308 5.28676923 8.92310769 1.30553846 4.94187692 5.28676923 0.960338462"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

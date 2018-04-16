@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:500');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+h4, li, button, a {
+    font-family: 'Oswald', sans-serif;
+}
+
+/* 
+Font Pairing: everything that's in body will be Lato. Then you specify where the other
+font will be used.
+*/
+
+
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.mobile_logo {
+    width: 50px;
+}
+
+.desktop_logo {
+    width: 150px;
+    display: none;
+}
+
+.desktop_nav {
+    display: none;
+}
+
+.desktop_nav ul li {
+    display: inline-block;
+    margin-left: 16px;
+    color: rgba(0,0,0,0.6);
+    font-size: 1rem;
+}
+
+.mobile_menu {
+    width: 32px;
+}
+
+@media(min-width: 750px) {
+    .mobile_logo {
+        display: none;
+    }
+
+    .desktop_logo {
+        display: block;
+    }
+}
+
+
+@media(min-width: 900px) {
+    .mobile_menu {
+        display: none;
+    }
+
+    .desktop_nav {
+        display: block;
+    }
+}
+
+/* 
+Make all style definitions first,
+Then turn the display property on and off. Showing and hiding different elements
+to check how they're going to be displayed.
+
+min-width (because we're starting with mobile first.
+
+With a lot of media queries, you'll need to look at your design and see how it changes as
+you grow and stretch the screen.
+
+If you have a lot of links, you might not be able to show them all until your screen is at like
+900px wide
+
+*/

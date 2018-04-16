@@ -1,0 +1,5 @@
+Don't use max-width and min-width on the same page.
+
+Choose one or the other.
+
+Start Mobile-first, that's the industry standard.

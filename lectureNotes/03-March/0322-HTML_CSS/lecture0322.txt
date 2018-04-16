@@ -1,0 +1,145 @@
+Meta Tags in the Head section are used for search engine optimization (SEO).
+
+<meta charset -- UTF-8... Makes it so you can use special characters on your site.
+
+Adding image tags with an alt property help with mobile devices.
+alt="" should be a description about what it is.
+
+Use relevent meta tags, google will know if you're spamming.
+
+rel - the relationship between your current file and what you're linking in.
+
+href - where does that tag live.
+
+./ shows the file path 
+
+Semantic HTML
+Use descriptive tags that have meanings
+If it's a section, use section <section className=""></section>
+If it's a header, use a header tag <header className=""></header>
+If your content is a bunch of divs with no descriptions, it's really hard on the accessibility.
+Div and Span are NOT Symantic HTML tags
+
+Each browser has a default style for all its elements.
+
+We're going to use a reset.css file to get rid of all styling. It helps to know what still needs to be styled.
+Link it in the header above the main styling sheet, because of order of operations.
+
+**Always have inspect open**
+
+OH MY GOSH! <( '-' )>
+Good developers live in the console.
+
+box-sizing: border-box;
+Fixes problems.
+
+If you don't use it, the size of the element doesn't take into account the padding and border.
+"I want my element to be a hundred pixels exactly!"
+The moment you add pixels for padding and border... if changes what you want, and it's math. Icky.
+
+box-sizing: border-box; puts the width and height of the total element. 
+It will go into the width instead of adding onto it.
+
+
+Main Tags - you should only have one.
+
+
+CSS STYLING:
+Very similar to key/value pairs in JavaScript objects
+
+Background images: will usually style in CSS.
+Actual images: in-line img tag.
+
+It's easier to control the size of an image by sizing the div, and then styling img tags to have a width
+of 100% (of the parent).
+
+In-line Styling is more specific than class and id.
+Usually a last-resort?
+
+
+If you include
+!important;
+
+to any piece of CSS, it will win EVERY time.
+
+Write good code so you will never have to use !important;
+
+DISPLAY --
+Inline-block
+Whatever element size, pattern, border, and margin is, it will allow them to sit together.
+
+Block:
+Space will take up the full span and have no neighbors.
+
+
+Margins:
+
+margin: num1, num2, num3, num4;
+(Margins will apply clockwise startig with num1 on the top.)
+
+margin: num1 num2;
+(will apply num1 to top and bottom, and num2 to left and right)
+
+margin: num;
+(will apply num to all four sides.)
+
+Auto will divide evenly between the two sides
+
+
+Separate classes, ids, elements, references, etc with commas, and styling will apply to all.
+
+
+FONTS
+Importing
+Two ways to do this.
+
+The first way is "Standard" and you add the link in your head section.
+
+2nd way: @import - paste this into your CSS.
+
+THEN paste the font-family into your css.
+
+Fonts will default to serif.
+
+Font Sizes:
+Don't go smaller than 12, but this depends on what you're doing.
+
+Properties: line-height and letter-spacing
+
+line-height: how much space is between your text
+
+With titles, spacing the text can make it look nicer.
+
+
+Color:
+Built-in, hexcode (#), rgb, rgba
+RGBA lets you alter the opacity
+
+
+It's good to have CSS mimic the HTML (order). Helps keep things readable.
+
+no-repeat (will make sure the image doesn't repeat)
+
+center (take the center of the image and put it in the center).
+
+
+BACKGROUND-SIZE: cover;
+Makes it so the image will be in the center, always, and also that it will fill the whole space
+Cover makes the image responsive, so you won't get aspect ratio distortion.
+(centralize)
+
+Background-size: contain;
+
+
+Float vs Inline-block
+Personal preference, but you don't need to use both.
+
+
+"Cloning" other websites is very helpful for practicing HTML and CSS.
+
+Get the basic layout of the site, and do basic boxes.
+Get the layout down before you fill in the important content.
+
+Wire-framing, sketching out the basic outline first.
+
+Easier to draw something and realize it was a mistake than to go back and change the code.

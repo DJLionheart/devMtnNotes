@@ -1,0 +1,9 @@
+22 March 2018
+
+Semantic HTML
+Use descriptive tags that have meanings
+If it's a section, use section <section className=""></section>
+If it's a header, use a header tag <header className=""></header>
+If your content is a bunch of divs with no descriptions, it's really hard on the accessibility.
+
+Using descriptive tags that have meaning to help with accessibility.
