@@ -17,12 +17,19 @@ let states = {
   }
  
 // map -> mapValues / mapKeys
-
+let newStates = _.mapValues(states, (elem, index, wholeObj) => {
+    elem.density = elem.population / elem.size;
+    return elem;
+})
 // forEach -> forIn / forOwn,  
 
 // find
 
+let myMovie = _.find(movies, {year:'2000', contentRating:'15'});
+
 // groupBy
+
+let byYear = 
 
 // union
 
