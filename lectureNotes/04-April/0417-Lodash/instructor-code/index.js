@@ -29,12 +29,13 @@ let myMovie = _.find(movies, {year:'2000', contentRating:'15'});
 
 // groupBy
 
-let byYear = 
+let byYear = _.groupBy(movies, 'year');
+let byDecade = _.groupBy(movies, (movie)=>Math.floor(movie.year / 10) * 10)
 
 // union
 
 // intersection
 
 // memoize
-
-let a = 5;
+5
+let a = 5 + 13 + '5';

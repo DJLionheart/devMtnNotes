@@ -9,4 +9,6 @@ Goal of Lodash: give you access to higher level functions in order to accomplish
 
 It's nice when we don't have to accomplish those common tasks using full, long code.
 
+Lodash has updated/optimised many of the functions we normally use.
+
 */
