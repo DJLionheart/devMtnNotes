@@ -1,10 +1,25 @@
 // Lecture 17 April 2018
 
-// For Lodash, view ./React-V/index.js
-
-
 
 /*
+For Lodash, view ./React-V/index.js
+
+Get familiar with it. Between Lodash and Underscore, a majority of projects use it.
+Lodash - written to run things fast.
+Underscore - written to be easier to read. Maybe look at underscore first and then use Lodash?
+
+Why reinvent the wheel???
+
+_.debounce (will prevent something from firing off too much. Waits until your done inputting something before firing.)
+
+_.throttle( I'll let you run the function first, but then not do it again... (Button Clicks - Pay Now, but will 
+prevent users from accidentally double clicking and paying twice))
+
+
+
+
+
+
 Developer / Debugging Tools
 
 
@@ -87,6 +102,17 @@ list of all your variables.
 
 Call Stack:
 To know what's going on, and see who invoked who.
+
+Pause on Exceptions:
+Usually you don't have to, but sometimes it is very helpful in slowing down and finding out what is going wrong.
+
+People will be hiring me to help figure out what's going wrong.
+
+More often than not, your function will break because you have wrong assumptions about your data,
+not because of your syntax. (object vs. array, other data types, etc).
+
+Check out the network tab, you can see what you're sending and getting back (or not sending and getting back)
+
 
 */
 
