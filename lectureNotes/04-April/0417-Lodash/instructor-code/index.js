@@ -4,11 +4,10 @@ let brack = {
     name:'Brack',
     age:32,
     height:'6ft'
-} 
-
+}
 
 let states = {
-    california:{population:38332522, size:162695},
+    california:{population:38332523, size:162695},
     texas:{population:26448193, size:268580},
     newYork:{population:19651127, size:54556},
     florida:{population:19552860, size:65754},
