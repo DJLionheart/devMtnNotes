@@ -1,3 +1,18 @@
+// Lecture 17 April 2018
+
+// Lodash
+
+
+/*
+
+Goal of Lodash: give you access to higher level functions in order to accomplish common tasks more simply and cleanly.
+
+It's nice when we don't have to accomplish those common tasks using full, long code.
+
+Lodash has updated/optimised many of the functions we normally use.
+
+*/
+
 let _ = require('lodash');
 let movies = require('./movies.json');
 let brack = {
@@ -67,7 +82,27 @@ the data from your database, and then lodash can help the user filter/sort/maniu
 
 // union
 
+// Goal is to give back a single array with all the elements.
+
+let brackFriends = ['Joe', 'Missy', 'David', 'Golden', 'Blake', 'Jeremy']
+let jeremyFriends = ['Missy', 'Nolan', 'Noah', 'Blake', 'Stephen', 'Lloyd']
+
+//create an array with all the friends without repeating duplicates.
+
+let combinedFriends = _.union(brackFriends, jeremyFriends)
+// If you ever happen to give something that already has duplicate data, and you give union a single array,
+// it will get ride of the duplicates for you.
+// Lodash also has _.unique(), but _.union works too. You can union as many arrays as you want.
+
+
+
 // intersection
+
+let sharedFriends = _.intersection(brackFriends, jeremyFriends);
+// Instead of ALL the friends, I just want to know shared friends, where do they 'intersect' (Mutual Friends on FB)
+// I could do this with JavaScript... Spending 5/10/15/20 minutes on it. BUT if I'm in the middle of doing other code,
+// I don't want to spend that time. If I know what these lodash functions mean, I can just use them instead of making
+// a custom function!
 
 // memoize
 

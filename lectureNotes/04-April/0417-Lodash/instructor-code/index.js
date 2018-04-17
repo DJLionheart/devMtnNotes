@@ -34,8 +34,14 @@ let byDecade = _.groupBy(movies, (movie)=>Math.floor(movie.year / 10) * 10)
 
 // union
 
+let brackFriends = ['Joe', 'Missy', 'Joe','Joe','Joe', 'David', 'Golden', 'Blake', 'Jeremy'];
+let jeremyFriends = ['Missy', 'Nolan', 'Noah', 'Blake', 'Stephen', 'Lloyd', 'Ally'];
+
+let combinedFriends = _.union(brackFriends,jeremyFriends);
+
 // intersection
+let sharedFriends = _.intersection(brackFriends, jeremyFriends);
 
 // memoize
-5
+
 let a = 5 + 13 + '5';
