@@ -13,7 +13,8 @@ Lodash has updated/optimised many of the functions we normally use.
 
 */
 
-let _ = require('lodash');
+const _ = require('lodash');
+const axios = require('axios');
 let movies = require('./movies.json');
 let brack = {
     name:'Brack',
@@ -105,6 +106,70 @@ let sharedFriends = _.intersection(brackFriends, jeremyFriends);
 // a custom function!
 
 // memoize
+
+// Will memorize the results from a given function, so if I ask for those parameters again, it instantly gives me the result.
+// You can memorize the results of an API call (if the same search is being made), and it can happen instantly instead of
+// having to go to the server all over again.
+
+// Good for any function that's going to take a long time to run.
+// let slowFunction = function( n ) {
+//     let total = 0
+//     for(var i = 0; i < n; i++) {
+//         for (var j = 0; j < n; j++) {
+//             for (var k = 0; k < n; k++) {
+//                 total += 1;
+//             }
+//         }
+//     }
+//     return total;
+// }
+
+// console.time('slowFunction:10');
+
+// let x = slowFunction(10);
+// console.log(x)
+
+// let y = slowFunction(1000);
+
+// console.timeEnd('slowFunction:10');
+// console.log(y)
+
+
+// let memFunction = _.memoize(slowFunction);
+
+// console.time('memFunction:1000');
+
+// let z = memFunction(1000);
+
+// console.timeEnd('memFunction:1000');
+// console.log(z);
+
+// console.time('memFunction:1000-2')
+
+function getPerson(i) {
+    return axios.get('https://swapi.co/api/people/' + i)
+}
+
+let memGetPerson = _.memoize(getPerson);
+
+console.time('axios');
+memGetPerson(1).then( data => {
+    // console.log(data);
+    console.timeEnd('axios')
+
+    console.time('axios2')
+    memGetPerson(1).then(data => {
+        // console.log(data);
+        console.timeEnd('axios2');
+    })
+});
+// Making a second request at the same time of the first request.
+// This is just showing how fast it will be one you memorize the API call.
+// You would use this if users are interacting with the data frequently (search boxes).
+// If they search for the same thing again, the answer will already be there.
+
+
+// This is basically naming a stopwatch... It will tell us how long the code is taking.
 
 let a = 5;
 
