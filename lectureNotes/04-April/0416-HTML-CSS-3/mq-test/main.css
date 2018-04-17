@@ -59,13 +59,13 @@ font will be used.
     right: -100;
     top: 75px;
     transition: all 0.5s ease;
-    /* animation: slide_out 2s infinite; */
+    animation: slide_out 2s;
 }
 
 .menu_open .mobile_menu_container {
     right: 0;
 }
-/* @keyframes slide_out {
+@keyframes slide_out {
     0%   { 
         right: -100%;
     }
@@ -79,7 +79,7 @@ font will be used.
     100% { 
         right: 0; 
     }
-  } */
+  }
 
   /* 
 This keyframes timeline is where we set up the tweens.
