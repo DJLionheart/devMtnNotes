@@ -1,0 +1,154 @@
+Passport AND Auth0
+
+Authentication:
+The process of verifying that an individual/website is who it claims to be.
+
+It's common to require username or ID and password (info only the user should know)
+
+
+Unique Experience for User?
+Info relevent to the user?
+YOU NEED TO AUTHENTICATE.
+We authenticate to keep data safe.
+
+
+Basic Auth:
+Very simple way to enforce access controls for web resources.
+
+Creds are sent in the request header (axios calls have headers, sometimes descriptive of what you're asking for)
+
+
+Status Code 401 - Unauthorized.
+"I don't know you"
+
+Status Code 403 - Forbidden
+"I know EXACTLY who you are, and you aint gettin' nothin'!"
+
+
+WWW-Authenticate: Basic realm="localhost"
+
+
+
+Encoding: The process of putting a sequence of chars into a specialized format for efficient transmission or storage.
+
+All you need to decode is the algorithm used to encode.
+(Algorithm: a pattern)
+
+The goal of encoding is not to keep things secret, it's just for encryption.
+
+
+
+
+Form-Based Authorization:
+HTML Form, enter credentials, info sent to server.
+Credentials sent in body of request.
+
+Looks safe and secure, but is it?
+NOPE.
+
+
+SSL - Secure Socket Layer
+
+HTTPS (HTTP over TLS)
+
+TLS = Transport Layer Secure
+
+
+If you're sending sensitive info, you should see the green secure box. If you don't see the green box, don't interact with that site.
+
+
+ALWAYS use HTTPS for basic and form-based authentication.
+
+HTTPS -> encryption
+
+
+Encryption:
+Transforms data with the goal of keeping it secret.
+
+//////////////////////
+Text >> encryption algorithm + key >> ciphertext
+\\\\\\\\\\\\\\\\\\\\\\
+
+Ciphertext can only be decrypted with hte algorithm and key used to encrypt it.
+
+
+Man in the Middle Attack:
+When the client and server want to set up secure communication (use HTTPS to encrypt)
+Handshake occurs to set up the secure connection. Man in the middle can try and intercept data while the handshake is happening,
+and filter information between client and server.
+
+Private Key / Public Key
+
+
+
+What do we do with User credentials once they reach the server?
+    Store plain text password in database? NOOOOOOOOO
+    Encode the password and store in database? NOOOOOOOOO
+    Encrypt the password and store the encrypted password in the database? NOOOOOOOOO
+    Hash the password? YES!!!!!!!!!!!!
+
+
+Hashing:
+Another way to protect the data.
+
+User password gets passed through a hash algorithm, and is given a hashed string
+
+Hashed passwords become 'random' strings of characters.
+Not intended to ever be un-hashed.
+
+
+Server stores hashed password, not original.
+
+
+Same input, same algorithm, same hash.
+
+
+
+pass >>>Hash>>> L2394JJ
+
+Deprecated Algorithms:
+MD5
+SHA-1 (Secure Hashing Algorithm)
+
+
+
+Rainbow Tables? Nefarious people spend time hashing passwords. If the values match, they'll be able to figure out your password.
+
+
+Hash and Salt:
+user password and salt value >>>>>hash algorithm>>>>> hash value
+Each user that logs in will get a specific salt value.
+So if 15 people have the same password, the hash will still be different, becasuse everyone will get a different salt value.
+The salt value for a given person will be the same every time, but everyone will get a different salt value.
+
+Ideally, the salt value would be solved in the database.
+
+
+Hashing, Salting, HTTPS, Good Network Security people
+
+
+Do validation both in your database, but also on the react side.
+
+Hash: 
+Goal is to ensure integrity
+
+
+Fishing:
+"Lets all be really cautious and take care of our grandparents, okay?"
+
+
+
+What do we do now?
+
+Take advantage of other companies that have poured millions into security....
+
+
+Passport:
+Middleware authentication for Node.js
+
+Provides many strategies that we can use (Google, Facebook, Twitter, LinkedIn, Steam, Spotify, Etc)
+
+
+Session:
+SID & any other info is stored on the Session Store;
+Cookie and session ID get sent to the client.
