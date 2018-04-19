@@ -39,3 +39,137 @@ Where possible, I'm going to hit an endpoint, get the data I need, modify it on 
 BUT heavy lifting can be done on the front end.
 
 Axios call - refactor the endpoint to do more heavy lifting.
+
+
+
+
+
+Body Parser makes it so you can access data on req.body
+
+Express has its own body parser
+
+
+
+CORS - 
+------------------
+By default, no cross-origin requests are allowed.
+That's why using proxy in package.json is important.
+
+
+
+
+
+Express Session 
+------------------------------
+app.use(session({
+    ........
+}))
+
+The second a request hits the server's session middleware, it asks the browser "have I given you a cookie?"
+If the answer is no, Session creates a session ID, and it gets saved in the Session Store.
+Session id: 283237 {
+    (empty object)
+}
+
+Server then sends a cookie to the computer with the created session ID.
+
+Then, anytime the client app interacts with the server, the browser will send the cookie back (with the session id), and the server finds the userID in the store and
+puts it on the req object (req.session >>>>> will contain any session info we put on it.)
+
+
+req.session.user = 'Jed'
+
+//>>>>
+
+2468 {
+    user: 'Jed
+}
+
+Whatever you put on the session object will live there until the session expires, or until you logout/destroy the session.
+
+
+Race Conditions - when you're trying to modify the same pieces of data at the same time.
+Usually, keep resave to false, and saveUninitialized doesn't usually matter
+
+
+
+passport.serialize()
+------------------------------------
+Takes the profile data we give it, and inserts it into the Session 'store'
+
+
+passport.deserializeUser()
+-------------------------------------
+In charge of retrieving info from the store.
+Its main purpose is to put information directly on the req object.
+
+
+
+Massive
+--------------------------------------
+app.get(...................)
+
+app {
+
+    get: function....},
+
+    set: function.....}
+
+    {
+        db: db instance/ connection
+    }
+}
+
+
+app.set('db')
+This adds the string 'db' as the key for the key/value pair in the subobject in app
+
+App.set will look for the object with 'db' as the key and yield the db instance/connection
+
+
+
+
+Database Queries
+--------------------------------------
+Best practice: any queries I write, I will put in my db folder.
+There are ways to generate sql statements off of a spreadsheet...
+
+USE SEED FILES... You will have access to how you created the tables, in case something ever happens.
+
+
+
+
+-- Insert this user into the database, and then return the user
+-- Instead of having to do another find user call, returning *; will return it back right away!
+-- This can also be used for deleting from tables.
+
+
+passport.deserializeUser() is only for after login...
+
+
+Limit the amount of ways you can log in. If you want to provide multiple options, you'll have to link accounts
+
+
+
+//////////////
+/////////
+////
+
+Front end
+
+////
+
+/////////
+///////////////
+
+
+DOM - Document Object Model:
+Browser's internal rendering of our page.
+One file, our hyper text markup file.
+
+document.getElementById('root') (vanilla js)
+
+document: index.html
+
+
+
