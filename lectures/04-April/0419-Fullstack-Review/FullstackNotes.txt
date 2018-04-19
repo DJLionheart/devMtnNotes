@@ -1,0 +1,41 @@
+FULLSTACK REVIEW - 19 April 2018
+
+
+
+Routes:
+------------------
+
+Home (login)
+path='/'
+
+Private
+path='/private'
+
+
+
+
+
+Users Table
+-------------------
+
+ID - Primary Key
+USER_NAME - Text
+IMG - Text
+Auth_ID - Text
+
+(Not varchar, because we're logging in with google, and I'm going to trust that google won't mess up my server).
+
+If it was a more serious app, I would look into the auth id data and put my own checks in place.
+
+
+
+
+
+For personal projects, get an idea of your component tree.
+Depending on how many major components you have will determine what you store on redux.
+
+
+Where possible, I'm going to hit an endpoint, get the data I need, modify it on the server, and THEN send it to the front-end.
+BUT heavy lifting can be done on the front end.
+
+Axios call - refactor the endpoint to do more heavy lifting.

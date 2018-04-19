@@ -36,21 +36,26 @@ app.use(session({
 ////// NEW CODE - PASSPORT CODE //////////
 /////////////////////////////////////////
 
+
 // AFTER session middleware, use the passport
 app.use(passport.initialize());
 app.use(passport.session());
 // This line takes their passport and puts it on their session.
 // After this, passport takes care of the rest.
 
+
 passport.use( new Auth0Strategy({
     // This is setting up my app to use Auth0
     // These properties are VERY specific:
+    
     domain: DOMAIN,
     clientID: CLIENT_ID,
     clientSecret: CLIENT_SECRET,
     callbackURL: CALLBACK_URL, //callbackURL: redirect the users back to site
     scope: 'openid profile' //when request is made to google, we just want profile info back.
 }, function(accessToken, refreshToken, extraParams, profile, done){
+    console.log(profile);
+    
         done(null, profile); //1st param is error catching info, but all we care about is the profile information. Pass it on to next
 }) )
 // Auth0Strategy: two parameters: config object and function. profile parameter is where we get user info.
@@ -64,6 +69,8 @@ passport.deserializeUser( (profile, done) => {
 })
 
 app.get('/auth', passport.authenticate('auth0')) //This kicks off the whole process. Param: specify the strategy we just defined.
+// If someone is not logged in, this will use the Auth0Strategy info above.
+// If someone IS logged in, it will use the callback function from the Auth0Strategy.
 
 app.get('/auth/callback', passport.authenticate('auth0', {
     successRedirect: 'http://localhost:3000' //redirects user from this endpoint to the Front End app.
