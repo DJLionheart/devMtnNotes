@@ -172,4 +172,102 @@ document.getElementById('root') (vanilla js)
 document: index.html
 
 
+<HashRouter> ---
+--------------------------------
+Its main purpose is to keep track of the url. If I change from / to /private, HashRouter will check any of the routes we have made.
+If a route matches, it will change the javascript to display the correct info.
 
+<Switch></Switch> makes sure that we don't render too many routes. Renders one at a time.
+
+Without using 'exact', the Router would see the / and never go past it.
+
+
+How do I know whether a component needs to be a class or a functional component?
+// Does this component need state? Does it need access to any lifecycle methods? If yes to any of those, it should be a class.
+
+
+
+Run NPM Start early on. As you're building in a feature, debug! Check to make sure it works before you move on to run 500 hours of code.
+
+
+Named Exports --------
+-------------------------------------------
+Instead of exporting by default, you can just export a function or piece of data. Then, when importing it into another JS file, we can either destructure:
+import { MethodName } from 'react'
+-OR-
+import React.MethodName
+
+
+JavaScript is an asynchronous language because of Promises. Anytime you assign a function to a variable, the function has to evaluate first before it does anything.
+
+
+Axios request immediately returns a promise object. 
+
+SO, userData has value - - a promise
+
+
+Redux Promise Middleware -------
+----------------------------------------------------------
+Checking for every action that gets sent through the reducer, if the value is a promise. If it's not a promise, it flows through the reducer no problem.
+
+If it IS a promise, it concatenates "pending" or "fulfilled" and will send it through again.
+
+
+
+
+Reducer ----
+---------------------------------
+If the new piece of state is NOT equal to the previous state, it will replace the state in the store( add it to the array of all previous states)
+
+
+
+
+
+serialize user places the primary key in the session
+
+deserializeUser finds the session user object in the session store.
+Whatever we pass out of it, it puts directly on the req object for us.
+
+If you want to protect a route, hit that auth/me endpoint, and it will tell you that they're logged in.
+Hit it on a componentDidMount to check that someone is logged in.
+
+
+Protect Data ----------
+---------------------------------------------------------
+First and foremost on the back end, protect your data.
+
+Protect it on the front end as well (there are ways to do this with Router)
+
+
+
+//////////////////////////////////////
+/////////              /////////////
+/////////  DATA FLOW  /////////////
+/////////             ///////////
+///////////////////////////////
+
+npm run build
+
+This is a build script.
+
+When I run it, it goes through the entire app and compiles everything into a build folder.
+
+Static Assets: CSS, JavaScript, Media
+
+(Uglified, minified version of our code)
+
+
+What do we do with this ugly code?
+
+If I want to serve up the static files in the build folder from one server, I just add one piece of code to the server index.js
+
+--------------------------------------------------
+app.use(express.static(__dirname + './../build'))
+--------------------------------------------------
+
+(One folder up, then to the build folder.)
+"Server! Go find these files in the build folder"
+
+__dirname is a keyword in node, representing the directory
+
+If i wanted to make this work, I would have to change the success and failure redirects in the app.get('/auth/callback')
