@@ -1,0 +1,88 @@
+
+
+SVG Tags: XML, individual coordinates, with fill and stroke properties that can be customized.
+
+Inkscape - free SVG Creator
+
+
+
+CSS ---
+----------------------------------------------
+stroke-dasharray (length of SVG path)
+stroke-dashoffset
+stroke-width 
+
+var shape = 
+document.querySelector('.classname';)
+
+var shapelength = 
+shape.getTotalLength();
+
+CSS animation properties we use to animate SVG
+(CSS and Keyframes)
+
+
+DEVTIPS Youtube Channel - CSS Animation
+(BB-8 Speed Draw)
+
+
+You can also use the Green Sock (GSAP) library to animate your SVGs.
+
+(MorphSVG - morph between SVGs.)
+
+MOJS
+
+Sara Drassner (sdras) on Codepen
+
+
+
+
+Keyframes:
+
+From and to
+
+<div class='square'/>
+
+
+
+
+
+
+.square{
+    height: 100px;
+    width: 100px;
+    background: #333;
+    animation: example 4s(duration) infinite
+}
+
+.square:hover{
+    animation: example 4s infinite;
+}
+
+@keyframes example {
+    0% {
+        background-color: #fff;
+}
+    50% {
+        background-color: yellow;
+}
+    100% {
+        background-color: green;
+        transform: rotate(60deg);
+    }
+}
+
+
+
+animation-iteration-count
+
+animation-timing-function
+-------------
+linear: same speed from start to end
+ease-in: starts slow
+ease-in-out: starts and ends slow, speeds up in the middle
+
+translate(x, y): defines a  2d transformation
+
+
+scale(x, y)

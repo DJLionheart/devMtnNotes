@@ -1,0 +1,57 @@
+Accessibility
+
+
+(Personal Project - if you get 75 percent or higher in all the categories on the Audits tab, you get an extra 10 points.)
+Bigger fonts 
+Color pallets
+
+
+
+Contrast-ratio.com -----------
+---------------------------------------------------------------
+Check your color pallet to see if you're getting a good contrast.
+Color contrasting.
+
+Use semantic components
+<Header></Header>
+<Nav></Nav>
+<Main></Main> - main body
+<Section></Section> - bigger pieces
+<Footer></Footer>
+
+--------------
+<Div></Div> for smaller pieces
+
+
+Language Attributes -----
+---------------------------------------
+<html lang="en"></html>
+
+
+Use metatags for search
+Be conscientious with your metatags
+
+
+Sections - will probably use the most
+(maybe Nav as well)
+
+
+Using alt tags on images when you place them in your code.
+You may have to change image paths when you host. 
+
+Videos - don't forget to include a subtitle track.
+
+Do not cause seizures
+
+
+Pay aware to color contrasting - for color blindness.
+
+Avoid error codes that are wrong.
+If the user is forbidden, do not send a 500 error.
+
+Use .get/.post/.put etc correctly.
+
+
+Audit your site.
+
+Page title tags.

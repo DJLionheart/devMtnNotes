@@ -1,0 +1,7 @@
+imort MuiThemeProvider from 'material-ui/
+
+
+import getMuiThem from 'material-ui/styles/getMuiTheme'
+-- give it as a prop
+
+

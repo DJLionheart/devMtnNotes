@@ -1,0 +1,163 @@
+
+
+Make sure .gitignore has the appropriate files.
+Maybe just create a folder called ignore/ and add that to your .gitignore
+
+
+1. Run create-react-app FIRST
+
+2. THEN type git init
+
+3. After that, go to GitHub and add a new Repo. If you don't initialize with a readme, it gives you the instructions on how to link the repo to your directory.
+
+
+---- Update your Readme, get rid of all the info you don't need.
+
+
+
+git status - to make sure .env is not there. 
+
+git add .
+git commit -m "initial commit"
+
+THEN 
+
+push an existing repo from the command line
+
+git remote add origin ---url----
+
+git remote add origin https://github.com/DJLionheart/in-step.git
+
+git push -u origin master
+
+
+
+Any time you have a functioning bit of code, commit it and push it.
+
+git push
+
+
+
+git log
+--------------
+Larger projects, there will be a lot of commits from a lot of people, and you might not know what you're looking for.
+
+
+If you want to go back to an earlier commit, you can copy the commit id and go back to an earlier version.
+
+----> git checkout (pasted commit id)
+
+This lets you go back to any point in your code.
+
+
+git checkout master - go back to master branch
+
+
+Discard changes (on an individial item) will discard changes for only that item).
+
+
+
+Pull Requests:
+(Adding a feature)
+
+git checkout -b (branch name for new feature)
+
+git add .
+git commit -m "new feature name"
+
+
+To compare: 
+git push -u origin branch-name (when pushing a new branch for the first time)
+
+
+
+
+Open a pull request
+
+Description, comment
+
+Create pull request
+Merge Pull Request
+--or-- check the files changed (shows what was added or removed)
+
+
+Some employers want you to be competent on the command line for git.
+Be familiar/proficient (git k)
+
+After you pull on GitHub (and confirm the merge), 
+
+git pull (in terminal) should bring the remote changes down to your computer
+
+
+You should commit anytime you have a feature that works that you want to be able to come back to.
+
+
+In case of fire, 
+Git Commit, Git Push, exit building.
+
+
+If there's something akin to an api connection or key, put it in your .env
+If you don't know how, talk to a mentor.
+
+
+
+
+
+
+
+----------------------------------
+-----------------------
+-----------------
+-----------
+-------
+--
+
+Personal Project KickOff - Part 2
+
+
+Filtering/sorting data, aggregating, etc.
+
+
+D3 Library?
+
+
+Portfolio-worthy project. Make sure it looks good.
+
+
+Cloning a Project?
+Demonstrating that you can look at something and re-create it.
+
+If you don't have UI/UX backround, look at website chunks that you can clone. Even if you're creating something.
+
+If you're not copying their source code, just looking at something for reference, you are not copying their code.
+
+
+PLANNING - super critical
+
+
+Specify MVP and Bonus Features
+
+MVP - The least your app needs to be up and running by Monday at 3:30
+
+
+Structure out component tree. 
+
+Figure out container components.
+
+
+
+Endpoints
+
+Schema - users table
+
+
+After we present, awards will be handed out.
+
+Presentation Time Limit: 3 Minutes
+
+
+
+During second week of projects, we will have a Hosting Lecture
+
+
+

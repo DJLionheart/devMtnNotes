@@ -1,0 +1,41 @@
+
+
+
+The list of variables will be in the top left of the debugger.
+
+
+If you don't want to dig through, you can add variables to the Watch list.
+
+
+Continue - runs until the next break point
+
+Step Over will Skip over a break point
+
+
+Call Stack---------
+---------------------------------------
+Which functions have been invoked.
+
+
+
+Breakpoints--------
+---------------------------------------
+Pause on all exceptions? (Anything that throws an error)
+
+Uncaught Exceptions(? good idea)
+
+Break Points you enter will appear at the bottom left.
+
+
+
+
+
+Documentation --------
+-------------------------------------------------
+Look up Debugger docs for setup help.
+
+
+Launch ( )
+
+Attach (?)
+
