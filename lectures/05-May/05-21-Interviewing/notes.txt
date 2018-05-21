@@ -1,0 +1,155 @@
+Interviewing//////////////
+////////////////////
+///////////////
+/////////
+////
+
+
+CSS Box Model -
+CSS Mechanic, start with the element - padding, border, and margin.
+
+Margin - white space between elements and others
+
+Border - light grey?
+
+Margins - use in navbar quite a bit.
+
+Padding adds white space between element and border (pushed element away from border)
+Padding helps keep elements away from the edge of the page.
+
+Too much padding will make the element bigger.
+
+Margin always makes leemnt bigger.
+
+Margin, padding, border can all be set individually.
+
+
+
+CSS Box Sizing:
+
+
+
+Feedback: 
+
+He gave specific examples in how he used the technologies. Noticing trends, things he observed.
+
+////  
+1. Technical answer/explanation.
+2. Usage examples of when you've used it.
+3. Related-topic question.
+
+Finish with a question ('Would you like to know more about ___' - I could share more, but I'm stopping because I recognize I've been talking for a while.) One of the best ways to end.
+(If they say yes, that's like feeding your own interview questions... But if they say no, you get points for it anyway :) )
+
+No matter what they ask you, they're basically asking: 'Can you code'
+
+Getting a technical answer is only a third of the equation.
+
+
+Interviews are a competition. You don't want to be arrogant, but too much humility will cost you the job.
+
+
+  ////////////////////////////
+/// Enthusiastic Humility  ///
+ ///////////////////////////
+
+This is the attribute to embrace as much as possible.
+Here are some opportunities to keep learning.
+
+Technical Aptitude is only 1/3rd 
+
+Culture and Communication are important too.
+
+People have been hired partially based on personality
+
+
+Utah Junior Developer Salary: 
+/////////////
+Basic, but still need some work: 40K
+Mastered competencies: close to 50K
+
+60K for masters
+
+Senior Developer: 90 - 120K
+
+
+------------------------------
+------------------------------
+
+Portfolio - It's powerful to be able to say: "I made this".
+
+Make sure the pieces are polished, solid, and bug-free.
+
+
+
+*Can you give me a code challenge, to take a week and send you what I have?
+
+
+Not what I am, but what I want to become for that company.
+
+"I'm not pretending, I want to learn as much as I can."
+
+Handle critique well.
+
+
+Portfolio and conversations are how I will stand out.
+Fight for a conversation.
+
+
+3 C's:
+--------------------
+1. Code 
+2. Culture 
+3. Communication 
+
+Knowing your audience is important.
+
+Try to connect with your audience. Don't try and explain super-detailed technics to an HR representitive. Give good higher level concepts, in a way that's easy to understand.
+
+Dress Code:
+--------------------
+Nice Pants, and Polo (or button up plaid) 
+No tie.
+
+
+Interview Types?
+--------------------
+1. HR Interview -
+Hiring manager, etc. No coding questions, necessarily.
+"You can hire me, I'm safe..."
+
+2. Technical Screen - 
+Databases, servers, React Components, 
+
+3. In-Depth Technical Interview - 
+White boarding, etc.
+
+
+Be careful with QA Positions (Quality Assurance great way to get into the industry... You will still be learning code. You'll spend a lot of time testing and learning from those tests.)
+If you start there, keep building your portfolio regularly.
+
+QA transitioning to Dev is one of the most common paths.
+
+Golden Nugget Situation - What things did you not think about. Did you ever imagine someone accidentally using an * with their name?
+String multiplied by String? Things break.
+
+
+"How much do you think you should be making?"
+
+"You know what, I really want to break into the industry and learn a lot."
+If they push, "I would be looking for 40 - 55K..." Family situation... (based on my bills, do I have to pay for insurance, etc)
+
+With onne of your first two jobs, you'll need at least 18 months to two years.
+
+Your raise will not be about how long you've been at a company. It'll be about your skill. You better grow.
+
+Internships and Contracts are viewed as growth opportunities (short-term).
+
+
+HOMEWORK//////////////////
+//////////////////
+////////////
+///////
+///
+
+Fill out all of the questions on the example form.
