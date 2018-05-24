@@ -1,0 +1,32 @@
+Sandbox/Playground App - A Place to test out tech and see if it works.
+
+That way I won't have to create a new app every time I want to try something out.
+
+
+
+CSS in JS ----
+-----------------------------
+Great library for group projects. CSS in your javascript files.
+
+You can have merge conflicts if multiple people are updating the same CSS files.
+
+You can just pull up a javascript file and style it in the code, so you don't have to
+worry about changes in the CSS files.
+
+Aphrodite
+------------------
+
+Just build a styles object
+
+const styles = StyleSheet.create({
+    button: {
+        background: 'blue',
+        border: 'none',
+        borderRadius: '3px',
+        color: this.state.selected ? white : 'blue'
+    }
+})
+
+
+
+<button className={css(styles.button)}>Choose</button>
