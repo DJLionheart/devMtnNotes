@@ -149,4 +149,16 @@ If you don't want to rely on an actual HTTP request, you can mock the request.
 Axios Mock Adapter
 
 
+
+
+Testing in React---
+
+Create a utils folder, and a __tests__ folder. Add the functions you want to test to a module.exports object in a functions.js file, then in your component, you can change the this.functionName to functions.functionName from the export by importing it to the Component.
+
+We will take one function and write 5 tests for it.
+
+Test something long, test something short, also test where things should pass, or should fail.
+
+
+During group projects: if you can't find code to test, ask a mentor or Joe directly, and they'll help find the code.
 */
