@@ -55,4 +55,98 @@ before they snap off.
 
 Server - Load Testing (You can send fake traffic to your server to see how many requests it can take before it explodes.)
 
+
+Jest will look for any files with .test.js or files in the __test__ folder
+
+Test global
+2 Arguments:
+1. A string naming the test
+2. A callback function to be run.
+
+test('my jest test', () => {
+    expect(2).toEqual(2)
+})
+
+----- This is basically all it takes
+
+
+expect().toBe()
+
+expect().toEqual()
+Testing for equality
+
+These compare one value to another.
+
+
+.toBe() -> the same as strict equality ===
+
+.toEqual() -> recursive (will recursively check the contents of arrays and objects to check if they are equal)
+
+.toBeCloseTo() - "close enough..."
+
+
+.toMatch()
+
+or .not.toMatch()
+
+.toContain()
+
+
+toBe, toEqual, toBeTruthy, toBeFalsy, toContain
+Are the methods we'll probably use the most.
+
+test.only() will let you skip all other test
+
+test.skip() will skip the test
+
+
+Testing JavaScript Classes:
+------------------------------------------------------------------------------------------
+Common pattern in writing test: 1. Arrange, 2. Act, and 3. Assert
+    
+    Arrange - setting up what we need for the test.
+    Act - Grab the result from actually doing something
+    Assert - Make the assertion
+
+
+
+
+TESTING BEST PRACTICES:
+------------------------------------------------------------------------------------------
+
+Avoid test interdependence. Make sure EACH test is independent. No variables should be shared between tests. It is not good practice to have tests rely on other tests.
+
+Black box of code - everything is contained within
+
+White box of code - lots of environmental things could be interacting with the test.
+
+
+beforeEach( () => {
+    return initializeCityDatabase();
+})
+
+Would run before each test
+
+afterEach( () => {
+    return clearCityDatabase();
+})
+
+Would run after all the tests run 
+
+
+Keep your tests simple and easy to read.
+
+You don't want to have to refactor MASSIVE tests... Refactoring smaller tests is much simpler.
+
+If you need to run an asynchronous test, return a promise (that's the easiest way)
+
+Async and await is also a good way.
+
+
+Mocking
+----------------------------------------------------------------------------------------
+If you don't want to rely on an actual HTTP request, you can mock the request.
+Axios Mock Adapter
+
+
 */
