@@ -1,0 +1,50 @@
+{
+    "error:" {
+        "config": {
+         "transformRequest": {},
+         "transformResponse": {},
+         "timeout": 0,
+         "xsrfCookieName": "XSRF-TOKEN",
+         "xsrfHeaderName": "X-XSRF-TOKEN",
+         "maxContentLength": -1,
+         "headers": {
+          "Accept": "application/json, text/plain, */*",
+          "Content-Type": "application/json;charset=utf-8"
+         },
+         "method": "post",
+         "url": "/user/login",
+         "data": "{\"newObj\":{\"email\":\"j@j\"}}"
+        },
+        "request": {},
+        "response": {
+         "data": "Sorry, we can't find that email in our system.",
+         "status": 401,
+         "statusText": "Unauthorized",
+         "headers": {
+          "date": "Wed, 09 May 2018 21:58:43 GMT",
+          "etag": "W/\"2e-FCs72qPQxcv8f+3VvTs6hvKyFLU\"",
+          "connection": "close",
+          "x-powered-by": "Express",
+          "content-length": "46",
+          "vary": "Accept-Encoding",
+          "content-type": "text/html; charset=utf-8"
+         },
+         "config": {
+          "transformRequest": {},
+          "transformResponse": {},
+          "timeout": 0,
+          "xsrfCookieName": "XSRF-TOKEN",
+          "xsrfHeaderName": "X-XSRF-TOKEN",
+          "maxContentLength": -1,
+          "headers": {
+           "Accept": "application/json, text/plain, */*",
+           "Content-Type": "application/json;charset=utf-8"
+          },
+          "method": "post",
+          "url": "/user/login",
+          "data": "{\"newObj\":{\"email\":\"j@j\"}}"
+         },
+         "request": {}
+        }
+       }
+}
