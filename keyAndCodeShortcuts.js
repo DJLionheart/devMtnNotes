@@ -68,6 +68,6 @@ Button Design:
     //What if there are negative integers?
     //It's good to think of ten pieces of sample data
 //3. Pseudo Code ------------> Write it out in Codelish
-    //Before you write down the code, right down some of the data types you need.
+    //Before you write down the code, write down some of the data types you need.
     //What does recursive mean?
 //4. Solve

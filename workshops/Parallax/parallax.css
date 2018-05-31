@@ -1,0 +1,19 @@
+/* The higher the perspective, the more it stretches out. */
+
+
+.parallax-container {
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+.background {
+    transform: translateZ(-2px) scale(3) /* makes the background look bigger */;
+    background-image: url();
+    background-repeat: no-repeat
+
+}
+
+/*combination of perspective and translate Z that give the parallax effect */
+

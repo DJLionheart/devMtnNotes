@@ -1,0 +1,28 @@
+Position: absolute
+
+To get the different scroll speeds, she used an event listener on the react page.
+
+Updated state to have each image scroll at a different rate.
+
+
+Z-index to get layers lined up properly
+
+Background images for each div.
+
+
+window.addEventListener()
+
+
+window.scrollY
+
+When do you want things to move, and how quickly? 
+
+Combine with event listeners
+
+
+Each picture background will just be a div.
+
+Container: picture and background-attachment: fixed;
+
+(as you're scrolling, the background remains fixed in relation to user scrolling)
+

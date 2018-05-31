@@ -9,5 +9,15 @@ it('cypress demo', () => {
 
         // assertion: cypress has access to commands from chai, mocha and other assertion libraries
         .should('contain', 'type') // Running an assertion to verify it contains type
+        .click() // will click on that DOM element.
+    cy.get('#couponCode1')
+        .type('GreatCouponCode')
+        .should('have.value', 'GreatCouponCode')
+    cy.get('button')
+        .contains('Submit')
+        // Gets a button that contains the text 'Submit'
+        .click();
+
+        // To visit own site: http://localhost:3000 and do the same thing as what we did in this demo
 
 })

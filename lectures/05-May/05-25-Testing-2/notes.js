@@ -43,9 +43,15 @@ Outlier scenarios... Think about what would happen if something went wrong.
 
 
 Cypress Testing - 
+-------------------------------------------------------------
+Cypress runs through your site as a user would, and automatically tests that user functionality still works.
+
+
+
 
 Chaining commands on a get request will only run the test for the parent command
 
-
+Outside of Visit, Get, and Contains - we haven't actually tested anything.
+Assertions will be the tests.
 
 */
