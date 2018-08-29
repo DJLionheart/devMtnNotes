@@ -1,0 +1,52 @@
+import { Motion, spring } from 'react-motion';
+
+Spring is the helper (does the math behind the scenes)
+Ramps down the speed (fast at first, then slows down)
+
+<Motion
+    defaultStyle={ {width: 0}}          (starts here)
+    style={{ width: spring(100)}}       what you want it to look like after animation is done
+>
+
+    {(style) => (
+        <div className="wrapper">
+            <Content width={ style.width } />
+        </div>
+    )}
+</Motion>
+
+
+All spring is doing is giving you a number. You can do with that number whatever you would like.
+It scales through the number.
+It could be position, width, color, etc.
+
+(Could use this for menu)
+
+
+`
+flex-basis: ${(props) => props.width}%
+`
+
+
+import { StaggeredMotion }
+
+
+Pattern: Set up collapsing divs to be full-width
+
+
+<StaggeredMotion
+
+    styles={(prevStyles) => [
+        {width: spring(0)},
+        {width: spring(prevStyles[0].width)},
+        {width: spring(prevStyles[1].width)},
+        {width: spring(prevStyles[2].width)},
+        {width: spring(100 - prevStyles[2].width)},
+    ]}
+>
+Spring is only generating one number, because we're doing a subtraction, 
+
+
+
+Y-Axis: adjust the height
+Apply the spring number to whatever you would like.

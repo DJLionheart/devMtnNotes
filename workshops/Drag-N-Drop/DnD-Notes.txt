@@ -1,0 +1,79 @@
+
+
+
+
+
+draggable attrbute
+
+and onDragStart={ callback }
+
+
+drag(e, id) {
+    e.dataTransfer.setData("id", id)
+}
+
+
+
+allowDrop(e) {
+    e.preventDefault()
+}
+
+drop(e) {
+    e.preventDefault()
+    let data = e.dataTransfer.getData('id')
+    e.target.appendChild(document.getElementById(data))
+}
+
+
+dropZone
+
+
+onDragOver={ e => }
+
+
+
+------------------------------------------------------------
+
+
+React draggable library
+
+
+<Draggable
+
+'Wrap whatever you want to drag, then set attributes on the Draggable tag.
+
+
+Grid - moves the specified amount of pixels whenever you drag
+
+bounds?
+
+
+Create a draggable div and place it within another section/html element, and set bounds of
+'parent', which means anything inside will not be able to move outside of it.
+
+
+---React Draggable only manipulates the CSS---
+
+React DnD (Dan Abramov)
+
+
+
+
+Create a List to Re-Order?
+---------------------------------------------------------------
+Higher Order component - using as a wrapper
+
+componentWillReceiveProps(nextProps) {
+    if(this.props.children !== nextProps.children) {
+        this.setState({ children: nextProps.children})
+    }
+}
+
+
+
+
+
+
+
+
+
